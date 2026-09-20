@@ -1,0 +1,33 @@
+{
+  "name": "@langfuse/minimax-code-observability-plugin",
+  "version": "0.1.0",
+  "description": "MiniMax Code plugin that traces agent turns, model responses, and tool calls to Langfuse",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.12.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsdown --config src/tsdown.config.ts",
+    "test": "vitest run",
+    "lint:tsc": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@langfuse/otel": "^5.4.1",
+    "@langfuse/tracing": "^5.4.1",
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/sdk-trace-node": "^2.0.1",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "prettier": "^3.9.4",
+    "tsdown": "^0.18.0",
+    "typescript": "^5.7.2",
+    "vitest": "^4.0.0"
+  }
+}

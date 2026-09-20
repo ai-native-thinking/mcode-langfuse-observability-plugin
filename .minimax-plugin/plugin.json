@@ -1,0 +1,16 @@
+{
+  "$schema": "https://agent.minimax.io/schemas/plugin.json",
+  "schemaVersion": 1,
+  "name": "langfuse-observability",
+  "displayName": "Langfuse Observability",
+  "version": "0.1.0",
+  "description": "Trace MiniMax Code turns, model responses, tool calls, and subagent sessions to Langfuse.",
+  "author": "Langfuse",
+  "icon": "assets/langfuse.png",
+  "category": "Code",
+  "exampleQueries": ["Show me the traces for this coding session"],
+  "apps": [],
+  "mcpServers": [],
+  "skills": [],
+  "hooks": "hooks/hooks.json"
+}
