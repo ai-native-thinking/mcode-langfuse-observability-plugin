@@ -12,7 +12,7 @@
 
 ## 安装
 
-在 MiniMax Code 的插件目录中放置本项目（目录名可以保持 `langfuse-observability`）。从本地目录导入时，插件根目录必须包含：
+在 MiniMax Code 的本地插件目录中放置本项目（MiniMax Code 0.4.12 的默认目录是 `~/.minimax/plugins`，目录名可以保持 `langfuse-observability`）。从本地目录导入时，插件根目录必须包含：
 
 ```text
 .minimax-plugin/plugin.json
@@ -28,6 +28,12 @@ pnpm build
 ```
 
 随后通过 MiniMax Code 的本地 Plugin 安装入口导入这个目录并启用插件。MiniMax Code 会把 `${MINIMAX_PLUGIN_ROOT}` 替换为插件根目录。
+
+也可以使用 CLI 检查本地插件是否已识别并启用：
+
+```bash
+mcode plugin list --marketplace local --available --json
+```
 
 ## 配置
 
